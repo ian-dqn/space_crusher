@@ -1,5 +1,4 @@
 import pygame
-#from game import Game
 
 class Shot(pygame.sprite.Sprite):
     """
@@ -15,5 +14,7 @@ class Shot(pygame.sprite.Sprite):
 
     def shot_update(self):
         self.rect.y -= 20
-#        if self.y < 0:
-#            self.bullet = None
+        if self.rect.y <= 0:
+            return True
+        else:
+            return False
