@@ -11,7 +11,7 @@ import utils
 #game necesities
 screen = pygame.display.set_mode((640, 480))  #Notice the tuple! It's not 2 arguments
 clock = pygame.time.Clock()
-FPS = 20                                      #This variable will define how many frames we update per second. Old computer so I let it a 20/s
+FPS = 10                                      #This variable will define how many frames we update per second. Old computer so I let it a 20/s
 successes, failures = pygame.init()
 print("{0} successes and {1} failures".format(successes, failures))
 clock.tick(FPS)
